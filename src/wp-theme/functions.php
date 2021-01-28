@@ -31,10 +31,10 @@ add_theme_support( 'post-thumbnails' );
 
 // REGISTER MENU AREAS
 function register_header_menu() {
-    register_nav_menu('header-menu',__( 'Header Menu', 'ferdio' ));
+    register_nav_menu('header-menu',__( 'Header Menu', 'THEME_NAME' ));
 }
 add_action( 'init', 'register_header_menu' );
 function register_footer_menu() {
-    register_nav_menu('footer-menu',__( 'Footer Menu', 'ferdio' ));
+    register_nav_menu('footer-menu',__( 'Footer Menu', 'THEME_NAME' ));
 }
 add_action( 'init', 'register_footer_menu' );
