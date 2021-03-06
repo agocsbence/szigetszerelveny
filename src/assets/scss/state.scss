@@ -1,0 +1,55 @@
+//variables
+$blue:          #00769a;
+$yellow:        #ffd800;
+$red:           #d61e1e;
+$grey:          #4d4d4d;
+
+//styles
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.carousel-item {
+    height: 100%;
+    width: 100vw;
+    background: #ccc;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-inner {height: calc(100vh - 76px);}
+
+.section.products,
+.section.single {
+    .card {
+        overflow: hidden;
+        .list-group {
+            height: 0;
+            opacity: 0;
+            transform: translateY(-50%);
+            transition: all .3s ease;
+            @media screen and (max-width: 991px) {
+                opacity: 1;
+                transform: translateY(0);
+                height: 100%;
+            }
+            a {
+                color: blue;
+            }
+        }
+        &:hover {
+            .list-group {
+                opacity: 1;
+                transform: translateY(0);
+                height: 100%;
+            }
+        }
+    }
+}
+
+.card,
+footer {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
