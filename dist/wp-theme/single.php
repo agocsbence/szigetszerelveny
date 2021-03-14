@@ -22,7 +22,7 @@ $children = get_terms( $term->taxonomy, array(
 // $master_category_id = $parent_category[0]->parent;
 // $master_category = get_the_category($master_category_id);
 
-var_dump($start_category);
+var_dump($category);
 ?>
 
 <section class="section single container">
