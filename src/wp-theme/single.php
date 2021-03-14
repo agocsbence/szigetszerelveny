@@ -9,7 +9,9 @@
         </ol>
       </nav>
     <div class="row mt-4">
-        <img src="<?php echo the_post_thumbnail_url(); ?>" class="col-12 col-lg-4" alt="<?php the_title(); ?>">
+        <div class="col-12 col-lg-4">
+            <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+        </div>
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
