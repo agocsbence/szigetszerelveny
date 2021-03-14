@@ -16,13 +16,13 @@ get_header();
         
         <div class="col-12 col-lg-4">
             <h3>Szigetszentmiklós</h3>
+            <img src="https://placehold.it/640x360" alt="">
             <p><i class="bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
             <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
             <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
             <p><i class="bi bi-envelope"></i> info@szigetszerelveny.hu</p>
-            <img src="https://placehold.it/640x360" alt="">
         </div>
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-lg-4">
         <table class="table table-hover">
             <h3>Nyitvatartás</h3>
             <tbody>
@@ -63,7 +63,7 @@ get_header();
             </tbody>
             </table>
         </div>
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-4">
             <h3>Térkép</h3>
             google maps
         </div>
