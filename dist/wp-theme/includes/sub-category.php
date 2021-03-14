@@ -1,14 +1,14 @@
+<?php $parent_category = get_category($start_category->parent) ?>
+
 <section class="section single container">
     <nav class="mt-5" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <?php $parent_category = get_category($start_category->parent) ?>
             <li class="breadcrumb-item"><a href="termekek.html">Termékek</a></li>
-            <li class="breadcrumb-item"><a href="<?php echo esc_url( get_category_link( $parent_category->term_id )) ?>"><?php echo $start_category->parent ?></a></li>
+            <li class="breadcrumb-item"><a href="<?php echo esc_url( get_category_link( $parent_category->term_id )) ?>"><?php echo $parent_category->name ?></a></li>
             <li class="breadcrumb-item active" aria-current="page"><?php echo $start_category->name ?></li>
         </ol>
       </nav>
     <div class="row mt-4">
-        <?php var_dump($parent_category); ?>
         <h1><?php echo $start_category->name ?></h1>
         <p><?php echo $start_category->description ?></p>
     </div>
