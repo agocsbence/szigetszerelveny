@@ -22,7 +22,10 @@ get_header();
                 'hide_empty' => false,
                 'exclude' => 4
             )
-         );
+        );
+
+        $count = count($categories);
+        var_dump($count);
         
         echo '<ul>';
 
