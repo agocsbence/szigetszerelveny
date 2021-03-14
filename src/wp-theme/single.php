@@ -7,7 +7,7 @@ $start_category = get_the_category($id);
 $parent_category_id = $start_category[0]->parent;
 $parent_category = get_term($parent_category_id, 'category');
 
-var_dump($parent_category);
+var_dump($parent_category->name);
 // $master_category_id = $parent_category->parent;
 // $master_category = get_term($master_category_id, 'category');
 
