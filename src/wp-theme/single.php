@@ -3,9 +3,10 @@
 $id = get_the_ID();
 
 $start_category = get_the_category($id);
-$parent_category = get_category($start_category->parent);
-$master_category = get_category($parent_category->parent);
+$parent_category = get_the_category($start_category->parent);
+$master_category = get_the_category($parent_category->parent);
 var_dump($start_category);
+echo '<br>';
 var_dump($parent_category);
 ?>
 
