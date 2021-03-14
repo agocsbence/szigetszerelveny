@@ -6,6 +6,7 @@ $cat_id = $category->cat_ID;
 $start_category = get_category($cat_id);
 $parent_category = get_category($start_category->parent);
 $master_category = get_category($parent_category->parent);
+var_dump($start_category);
 ?>
 
 <section class="section single container">
