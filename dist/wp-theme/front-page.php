@@ -49,5 +49,3 @@ get_header();
 		</button>
 		</div>
 </section>
-
-<?php get_footer(); ?>

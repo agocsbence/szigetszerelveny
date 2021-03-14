@@ -29,12 +29,41 @@ add_theme_support( 'post-thumbnails' );
 // 	));	
 // }
 
+//RENAME POSTS MENU
+// Function to change "posts" to "news" in the admin side menu
+function change_post_menu_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Termékek';
+    $submenu['edit.php'][5][0] = 'Termékek';
+    $submenu['edit.php'][10][0] = 'Add Termék';
+    $submenu['edit.php'][16][0] = 'Tags';
+    echo '';
+}
+add_action( 'admin_menu', 'change_post_menu_label' );
+// Function to change post object labels to "news"
+function change_post_object_label() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Termékek';
+    $labels->singular_name = 'Termék';
+    $labels->add_new = 'Termék hozzáadása';
+    $labels->add_new_item = 'Termék hozzáadása';
+    $labels->edit_item = 'Termék szerkesztése';
+    $labels->new_item = 'Termék';
+    $labels->view_item = 'Termék megtekintése';
+    $labels->search_items = 'Keresés a termékek közt';
+    $labels->not_found = 'Nem található termék';
+    $labels->not_found_in_trash = 'Nincs termék a Lomtárban';
+}
+add_action( 'init', 'change_post_object_label' );
+
 // REGISTER MENU AREAS
 function register_header_menu() {
-    register_nav_menu('header-menu',__( 'Header Menu', 'THEME_NAME' ));
+    register_nav_menu('header-menu',__( 'Header Menu', 'szigetszerelveny' ));
 }
 add_action( 'init', 'register_header_menu' );
 function register_footer_menu() {
-    register_nav_menu('footer-menu',__( 'Footer Menu', 'THEME_NAME' ));
+    register_nav_menu('footer-menu',__( 'Footer Menu', 'szigetszerelveny' ));
 }
 add_action( 'init', 'register_footer_menu' );
