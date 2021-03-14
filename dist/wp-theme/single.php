@@ -1,28 +1,16 @@
 <?php get_header();
 
-// $id = get_the_ID();
+$id = get_the_ID();
 
-$category = get_category( get_query_var( 'cat' ) );
-$cat_id = $category->cat_ID;
+$start_category = get_the_category($id);
 
-$start_category = get_category($cat_id);
+$parent_category_id = $start_category[0]->parent;
+$parent_category = get_the_category($parent_category_id);
 
-$term = get_queried_object();
+$master_category_id = $parent_category[0]->parent;
+$master_category = get_the_category($master_category_id);
 
-$children = get_terms( $term->taxonomy, array(
-	'parent'    => $term->term_id,
-	'hide_empty' => false
-) );
-
-// $start_category = get_the_category($id);
-
-// $parent_category_id = $start_category[0]->parent;
-// $parent_category = get_the_category($parent_category_id);
-
-// $master_category_id = $parent_category[0]->parent;
-// $master_category = get_the_category($master_category_id);
-
-var_dump($category);
+var_dump($id);
 ?>
 
 <section class="section single container">
