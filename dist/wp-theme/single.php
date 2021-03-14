@@ -4,7 +4,7 @@ $id = get_the_ID();
 
 $start_category = get_the_category($id);
 $parent_category_id = $start_category[0]->category_parent;
-$parent_category = get_the_category($parent_category_id);
+$parent_category = get_the_category(5);
 $master_category_id = $parent_category[0]->category_parent;
 $master_category = get_the_category($master_category_id);
 var_dump($parent_category);
