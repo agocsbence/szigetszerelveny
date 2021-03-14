@@ -23,15 +23,22 @@ get_header();
                 'exclude' => 4
             )
         );
-
         $count = count($categories);
-        var_dump($count);
         
         echo '<ul>';
 
-        for( $i=0; $i<4; $i++ ) {
-            echo "<li>" . $categories[$i]->{'name'} . "</li>";
-        }
+        for( $i=0; $i<$count; $i++ ) { 
+            var_dump($categories[$i]) ?>
+            <div class="col-sm-12 col-lg-4">
+                <a href="vizgaz.html" class="card">
+                    <img src="./assets/img/slider-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $categories[$i]->{'name'} ?></h5>
+                    </div>
+                </a>
+            </div>
+
+        <?php }
 
         echo '</ul>';
     ?>
