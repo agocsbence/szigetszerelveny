@@ -16,7 +16,7 @@
 
 <body class="body bg-light">
 	<header>
-		<?php include get_theme_file_path( '' ); ?>
+		<!-- <?php include get_theme_file_path( '' ); ?> -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
