@@ -4,12 +4,12 @@ $id = get_the_ID();
 
 $categories = get_terms( 
 	'category', array(
-		'parent' => $id,
+		'parent' => 22,
 		'hide_empty' => false,
 	)
 );
 $count = count($categories);
-var_dump($count);
+var_dump($categories);
 
 for( $i=0; $i<$count; $i++ ) { 
 
