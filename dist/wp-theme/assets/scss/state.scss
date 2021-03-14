@@ -1,0 +1,75 @@
+//variables
+$blue:          #00769a;
+$yellow:        #ffd800;
+$red:           #d61e1e;
+$grey:          #4d4d4d;
+
+//styles
+main {
+    min-height: 70vh;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.carousel-item {
+    height: 100%;
+    width: 100vw;
+    background: #ccc;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-inner {height: calc(100vh - 76px);}
+
+.section.products,
+.section.single {
+    .card {
+        position: relative;
+        .list-group {
+            height: 0;
+            width: 100%;
+            opacity: 0;
+            transform: translateY(-50%);
+            transition: all .3s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @media screen and (max-width: 991px) {
+                opacity: 1;
+                transform: translateY(0);
+                height: 100%;
+            }
+            .list-group-item {
+                border-width: 0 1px 1px 1px;
+                &:first-child {
+                    border-top: 0;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+                &:last-child {
+                    border-bottom-width: 1px;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+            a {
+                color: blue;
+            }
+        }
+        &:hover {
+            .list-group {
+                opacity: 1;
+                transform: translateY(0);
+                z-index: 999;
+            }
+        }
+    }
+}
+
+.card,
+footer {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}

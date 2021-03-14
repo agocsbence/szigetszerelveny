@@ -63,6 +63,11 @@ gulp.task('copyWPstyle', function(){
     .pipe(gulp.dest('dist/wp-theme/'));
 });
 
+gulp.task('copyWPassets', function() {
+  return gulp.src('dist/assets/**/*')
+    .pipe(gulp.dest('dist/wp-theme/assets/'));
+});
+
 gulp.task('watch', function () {
   gulp.watch('./src/assets/scss/**/*.scss', gulp.series('styles'));
   console.log('gulp is watching for SCSS changes 👀');
@@ -82,5 +87,5 @@ gulp.task('watchWP', function () {
   return;
 });
 
-gulp.task('wordpress', gulp.series('copyWPimage', 'copyWPstyle', 'copyPHP', 'watchWP'));
+gulp.task('wordpress', gulp.series('copyWPimage', 'copyWPstyle', 'copyPHP', 'copyWPassets', 'watchWP'));
 gulp.task('default', gulp.series('imagemin', 'fonts', 'copyHTML', 'copyCSS', 'scripts', 'styles', 'watch'));
