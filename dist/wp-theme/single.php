@@ -3,11 +3,14 @@
 $id = get_the_ID();
 
 $start_category = get_the_category($id);
-$parent_category_id = $start_category[0]->category_parent;
+
+$parent_category_id = $start_category[0]->parent;
 $parent_category = get_the_category($parent_category_id);
-$master_category_id = $parent_category[0]->category_parent;
+
+$master_category_id = $parent_category[0]->parent;
 $master_category = get_the_category($master_category_id);
-var_dump($start_category);
+
+var_dump($parent_category_id);
 ?>
 
 <section class="section single container">
@@ -16,7 +19,7 @@ var_dump($start_category);
             <li class="breadcrumb-item"><a href="<?php echo get_permalink(20); ?>">Termékek</a></li>
             <li class="breadcrumb-item"><a href="<?php echo esc_url( get_category_link( $master_category->term_id )) ?>"><?php echo $master_category->name ?></a></li>
             <li class="breadcrumb-item"><?php echo $parent_category->name ?></li>
-            <li class="breadcrumb-item active" aria-current="page"><?php echo $start_category[0]->name ?></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="<?php echo esc_url( get_category_link( $start_category[0]->term_id )) ?>"><?php echo $start_category[0]->name ?></a></li>
         </ol>
       </nav>
     <div class="row mt-4">
