@@ -2,29 +2,15 @@
 
 $id = get_the_ID();
 
-$categories = get_terms( 
-	'category', array(
-		'child_of' => $id,
-		'hide_empty' => false,
-	)
-);
-$count = count($categories);
-var_dump($categories);
+$args = array('parent' => $id);
+$categories = get_categories( $args );
+foreach($categories as $category) { 
+    echo '<p>Category: <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p> ';
+    echo '<p> Description:'. $category->description . '</p>';
+    echo '<p> Post Count: '. $category->count . '</p>';  
+}
 
-for( $i=0; $i<$count; $i++ ) { 
-
-	$category_link = get_category_link( $categories[$i]->{'term_id'} );
-	$image = get_field('kep', $categories[$i]->taxonomy . '_' . $categories[$i]->term_id ); ?>
-
-	<div class="col-sm-12 col-lg-4">
-		<a href="<?php echo esc_url( $category_link ); ?>" class="card">
-			<img src="<?php echo $image?>" class="card-img-top" alt="<?php echo $categories[$i]->{'name'} ?>">
-			<div class="card-body">
-				<h5 class="card-title"><?php echo $categories[$i]->{'name'} ?></h5>
-			</div>
-		</a>
-	</div>
-<?php } ?>
+?>
 
 
 <section class="section products container">
