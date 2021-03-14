@@ -4,7 +4,7 @@ $id = get_the_ID();
 
 $categories = get_terms( 
 	'category', array(
-		'parent' => 0,
+		'child_of' => $id,
 		'hide_empty' => false,
 	)
 );
