@@ -9,7 +9,7 @@ main {
     min-height: 70vh;
 }
 img {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 .navbar-collapse {
     justify-content: flex-end;
