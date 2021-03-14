@@ -1,23 +1,4 @@
-<?php get_header();
-
-$category = get_category( get_query_var( 'cat' ) );
-$cat_id = $category->cat_ID;
-// $id = get_the_ID();
-
-echo $cat_id;
-
-$args = array('parent' => $cat_id, 'hide_empty' => false);
-$categories = get_categories( $args );
-foreach($categories as $category) { 
-    echo '<p>Category: <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p> ';
-    echo '<p> Description:'. $category->description . '</p>';
-    echo '<p> Post Count: '. $category->count . '</p>';  
-}
-
-?>
-
-<h1>archive.php</h1>
-
+<?php get_header(); ?>
 
 <section class="section products container">
 	<nav class="mt-5" aria-label="breadcrumb">
@@ -27,6 +8,40 @@ foreach($categories as $category) {
 		</ol>
 	</nav>
 	<div class="row mt-2">
+
+		<?php
+		
+		$category = get_category( get_query_var( 'cat' ) );
+		$cat_id = $category->cat_ID;
+		echo $cat_id;
+
+		$args = array('parent' => $cat_id, 'hide_empty' => false);
+		$categories = get_categories( $args );
+		foreach($categories as $category) { 
+			$image = get_field('kep', $category->taxonomy . '_' . $category->term_id );?>
+
+			<div class="col-sm-12 col-lg-3 g-3">
+				<div class="card">
+					<a href="">
+						<img src="<?php echo $image ?>" class="card-img-top" alt="<?php $category->name ?>">
+						<div class="card-body">
+							<h5 class="card-title"><?php $category->name ?></h5>
+						</div>
+					</a>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><a href="single.html">Acélcső,idomok</a></li>
+						<li class="list-group-item">KPE cső, idomok</li>
+						<li class="list-group-item">Lefolyócső, idomok</li>
+						<li class="list-group-item">Ötrétegű cső, fitting</li>
+						<li class="list-group-item">Rézcső, idomok</li>
+						<li class="list-group-item">Szénacél cső, idomok</li>
+						<li class="list-group-item">Szigetelés, védőcső</li>
+					</ul>
+				</div>
+			</div>
+
+		<?php } ?>
+
 		<div class="col-sm-12 col-lg-3 g-3">
 			<div class="card">
 				<a href="">
@@ -46,6 +61,8 @@ foreach($categories as $category) {
 				</ul>
 			</div>
 		</div>
+
+
 		<div class="col-sm-12 col-lg-3 g-3">
 			<div class="card">
 				<a href="">
