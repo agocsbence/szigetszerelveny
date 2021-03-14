@@ -33,7 +33,7 @@
 							<a class="nav-link" href="<?php echo get_permalink(20); ?>">Termékek</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Rólunk</a>
+							<a class="nav-link" href="<?php echo get_permalink(24); ?>">Rólunk</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -54,7 +54,7 @@
 							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Kapcsolat</a>
+							<a class="nav-link" href="<?php echo get_permalink(26); ?>">Kapcsolat</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#"><span class="badge bg-warning text-dark">Új üzletünk</span></a>
