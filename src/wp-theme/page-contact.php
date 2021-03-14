@@ -15,10 +15,13 @@ get_header();
     <div class="row bg-white p-3 mt-4">
         
         <div class="col-12 col-lg-4">
+            <h3>Szigetszentmiklós</h3>
+            <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
             <img src="" alt="">
         </div>
         <div class="col-12 col-lg-4">
         <table class="table table-hover">
+            <h3>Nyitvatartás</h3>
             <tbody>
                 <tr>
                     <th scope="row">Hétfő</th>
@@ -58,6 +61,7 @@ get_header();
             </table>
         </div>
         <div class="col-12 col-lg-4">
+            <h3>Térkép</h3>
             google maps
         </div>
 
