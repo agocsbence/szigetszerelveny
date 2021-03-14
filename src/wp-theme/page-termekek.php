@@ -12,12 +12,7 @@ get_header();
 <section class="section products container">
 
     <?php
-        $categories = get_terms( 
-            'category', 
-            array('parent' => 0)
-        );
-
-        var_dump($categories);
+        wp_list_categories();
     ?>
 
     <h1 class="mt-5">Termékek</h1>
