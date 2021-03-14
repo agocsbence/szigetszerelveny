@@ -3,6 +3,8 @@
 <?php the_title(); ?>
 <?php the_content(); ?>
 
+<h1>single.php</h1>
+
 <?php
     $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 3 ) );
     
