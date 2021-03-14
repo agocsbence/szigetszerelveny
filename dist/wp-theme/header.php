@@ -30,7 +30,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mb-2 px-lg-5 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="termekek.html">Termékek</a>
+							<a class="nav-link" href="<?php echo get_permalink(20); ?>">Termékek</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Rólunk</a>
