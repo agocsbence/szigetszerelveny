@@ -1,22 +1,23 @@
 <?php get_header(); ?>
+<?php
+
+$category = get_category( get_query_var( 'cat' ) );
+$cat_id = $category->cat_ID;
+
+$start_category = get_category($cat_id);
+
+?>
 
 <section class="section products container">
 	<nav class="mt-5" aria-label="breadcrumb">
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="termekek.html">Termékek</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Víz-gáz-fűtés</li>
+			<li class="breadcrumb-item"><a href="<?php echo get_permalink(20); ?>">Termékek</a></li>
+			<li class="breadcrumb-item active" aria-current="page"><?php echo $start_category->name ?></li>
 		</ol>
 	</nav>
 	<div class="row mt-2">
 
 		<?php
-		
-		$category = get_category( get_query_var( 'cat' ) );
-		$cat_id = $category->cat_ID;
-
-		$start_category = get_category($cat_id);
-
-		var_dump($start_category);
 
 		$args = array('parent' => $cat_id, 'hide_empty' => false);
 		$categories = get_categories( $args );
