@@ -15,11 +15,25 @@ $args = array(
     'child_of'      => $parent_term_id, 
 ); 
 
-$terms = get_terms($taxonomies, $args);
+$subcats = get_terms($taxonomies, $args);
+
+for( $i=0; $i<$count; $i++ ) { 
+	$category_link = get_category_link( $subcats[$i]->{'term_id'} );
+	$image = get_field('kep', $subcats[$i]->taxonomy . '_' . $subcats[$i]->term_id ); ?>
+		<div class="col-sm-12 col-lg-4">
+			<a href="<?php echo esc_url( $category_link ); ?>" class="card">
+				<img src="<?php echo $image?>" class="card-img-top" alt="<?php echo $subcats[$i]->{'name'} ?>">
+				<div class="card-body">
+					<h5 class="card-title"><?php echo $subcats[$i]->{'name'} ?></h5>
+				</div>
+			</a>
+		</div>
+<?php } ?>
 ?>
 
 
 <section class="section products container">
+	<?php get_breadcrumb(); ?>
 	<nav class="mt-5" aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="termekek.html">Termékek</a></li>

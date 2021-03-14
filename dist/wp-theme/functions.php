@@ -41,7 +41,7 @@ function change_post_menu_label() {
     echo '';
 }
 add_action( 'admin_menu', 'change_post_menu_label' );
-// Function to change post object labels to "news"
+
 function change_post_object_label() {
     global $wp_post_types;
     $labels = &$wp_post_types['post']->labels;
@@ -67,3 +67,24 @@ function register_footer_menu() {
     register_nav_menu('footer-menu',__( 'Footer Menu', 'szigetszerelveny' ));
 }
 add_action( 'init', 'register_footer_menu' );
+
+// BREADCRUMBS
+function get_breadcrumb() {
+	echo '<a href="' . home_url() . '" rel="nofollow>Home</a>';
+	if (is_category() || is_single()){
+		echo '  »  ';
+		the_category (' • ');
+			if (is_single()) {
+				echo '  »  ';
+				the_title();
+			}
+} elseif (is_page()) {
+		echo '  »  ';
+		echo the_title();
+	} elseif (is_search()) {
+		echo '  »  ';
+		echo '<em>';
+		echo the_search_query();
+		echo '</em>';
+	}
+}
