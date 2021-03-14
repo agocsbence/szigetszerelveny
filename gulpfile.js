@@ -54,13 +54,13 @@ gulp.task('copyPHP', function(){
 });
 
 gulp.task('copyWPimage', function(){
-  return gulp.src('src/screenshot.png')
-    .pipe(gulp.dest('dist/'));
+  return gulp.src('src/wp-theme/screenshot.png')
+    .pipe(gulp.dest('dist/wp-theme/'));
 });
 
 gulp.task('copyWPstyle', function(){
-  return gulp.src('src/style.css')
-    .pipe(gulp.dest('dist/'));
+  return gulp.src('src/wp-theme/style.css')
+    .pipe(gulp.dest('dist/wp-theme/'));
 });
 
 gulp.task('watch', function () {
