@@ -32,6 +32,13 @@ get_header();
             $category_link = get_category_link( $categories[$i]->{'term_id'} ); ?>
             <div class="col-sm-12 col-lg-4">
                 <a href="<?php echo esc_url( $category_link ); ?>" class="card">
+                <?php
+                    $image = get_field('kep', $category->taxonomy . '_' . $category->term_id );
+                    echo '<pre>';
+
+                    echo "Image field value:";
+                    var_dump($image);
+                    echo '</pre>'; ?>
                     <img src="./assets/img/slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $categories[$i]->{'name'} ?></h5>
