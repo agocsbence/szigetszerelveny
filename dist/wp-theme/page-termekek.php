@@ -33,7 +33,7 @@ get_header();
             <div class="col-sm-12 col-lg-4">
                 <a href="<?php echo esc_url( $category_link ); ?>" class="card">
                 <?php
-                    $image = get_field('kep', $category->taxonomy . '_' . $category->term_id );
+                    $image = get_field('kep', $categories[$i]->taxonomy . '_' . $categories[$i]->term_id );
                     echo '<pre>';
 
                     echo "Image field value:";
