@@ -2,7 +2,7 @@
 
 $id = get_the_ID();
 
-$args = array('parent' => $id);
+$args = array('parent' => $id, 'hide_empty' => false);
 $categories = get_categories( $args );
 foreach($categories as $category) { 
     echo '<p>Category: <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p> ';
