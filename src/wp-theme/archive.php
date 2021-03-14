@@ -14,6 +14,8 @@
 		$category = get_category( get_query_var( 'cat' ) );
 		$cat_id = $category->cat_ID;
 
+		var_dump($cat_id);
+
 		$args = array('parent' => $cat_id, 'hide_empty' => false);
 		$categories = get_categories( $args );
 		foreach($categories as $category) { 
