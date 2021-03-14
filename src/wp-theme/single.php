@@ -3,8 +3,8 @@
 $id = get_the_ID();
 
 $start_category = get_the_category($id);
-$parent_category = get_the_category($start_category->parent);
-$master_category = get_the_category($parent_category->parent);
+$parent_category = get_the_category($start_category->category_parent);
+$master_category = get_the_category($parent_category->category_parent);
 var_dump($start_category);
 echo '<h1>parent:</h1>';
 var_dump($parent_category);
