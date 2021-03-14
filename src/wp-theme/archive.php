@@ -14,6 +14,8 @@ foreach($categories as $category) {
 
 ?>
 
+<h1>archive.php</h1>
+
 
 <section class="section products container">
 	<nav class="mt-5" aria-label="breadcrumb">
