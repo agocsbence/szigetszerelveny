@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<?php the_title(); ?>
-<?php the_content(); ?>
-
 <section class="section single container">
     <nav class="mt-5" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -12,9 +9,7 @@
         </ol>
       </nav>
     <div class="row mt-4">
-        <div class="col-12 col-lg-4">
-            <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-        </div>
+        <img src="<?php echo the_post_thumbnail_url(); ?>" class="col-12 col-lg-4" alt="<?php the_title(); ?>">
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
