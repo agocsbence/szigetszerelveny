@@ -16,10 +16,9 @@
 
 <body class="body bg-light">
 	<header>
-		<!-- <?php include get_theme_file_path( '' ); ?> -->
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
 					<img src="<?php bloginfo('template_url') ?>/assets/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-top">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
