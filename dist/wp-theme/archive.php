@@ -9,6 +9,7 @@ $categories = get_terms(
 	)
 );
 $count = count($categories);
+var_dump($count);
 
 for( $i=0; $i<$count; $i++ ) { 
 
@@ -27,7 +28,6 @@ for( $i=0; $i<$count; $i++ ) {
 
 
 <section class="section products container">
-	<?php get_breadcrumb(); ?>
 	<nav class="mt-5" aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="termekek.html">Termékek</a></li>
