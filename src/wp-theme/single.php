@@ -6,7 +6,7 @@ $start_category = get_the_category($id);
 $parent_category = get_the_category($start_category->parent);
 $master_category = get_the_category($parent_category->parent);
 var_dump($start_category);
-echo '<br>';
+echo '<h1>parent:</h1>';
 var_dump($parent_category);
 ?>
 
