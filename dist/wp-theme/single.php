@@ -1,8 +1,20 @@
 <?php get_header();
 
-$id = get_the_ID();
+// $id = get_the_ID();
 
-$start_category = get_the_category($id);
+$category = get_category( get_query_var( 'cat' ) );
+$cat_id = $category->cat_ID;
+
+$start_category = get_category($cat_id);
+
+$term = get_queried_object();
+
+$children = get_terms( $term->taxonomy, array(
+	'parent'    => $term->term_id,
+	'hide_empty' => false
+) );
+
+// $start_category = get_the_category($id);
 
 $parent_category_id = $start_category[0]->parent;
 $parent_category = get_the_category($parent_category_id);
