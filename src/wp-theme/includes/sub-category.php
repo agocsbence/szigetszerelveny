@@ -1,7 +1,7 @@
 <section class="section single container">
     <nav class="mt-5" aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <?php $parent_category = $start_category->parent; ?>
+            <?php $parent_category = get_category($start_category->parent) ?>
             <li class="breadcrumb-item"><a href="termekek.html">Termékek</a></li>
             <li class="breadcrumb-item"><a href="<?php echo esc_url( get_category_link( $parent_category->term_id )) ?>"><?php echo $start_category->parent ?></a></li>
             <li class="breadcrumb-item active" aria-current="page"><?php echo $start_category->name ?></li>
