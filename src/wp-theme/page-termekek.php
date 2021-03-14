@@ -28,9 +28,10 @@ get_header();
         echo '<ul>';
 
         for( $i=0; $i<$count; $i++ ) { 
-            var_dump($categories[$i]) ?>
+            var_dump($categories[$i]);
+            $category_link = get_category_link( $categories[$i]->{'term_id'} ); ?>
             <div class="col-sm-12 col-lg-4">
-                <a href="vizgaz.html" class="card">
+                <a href="<?php echo esc_url( $category_link ); ?>" class="card">
                     <img src="./assets/img/slider-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?php echo $categories[$i]->{'name'} ?></h5>
