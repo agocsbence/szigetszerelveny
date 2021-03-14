@@ -7,8 +7,9 @@ $start_category = get_the_category($id);
 $parent_category_id = $start_category[0]->parent;
 $parent_category = get_term($parent_category_id, 'category');
 
-$master_category_id = $parent_category->parent;
-$master_category = get_term($master_category_id, 'category');
+var_dump($parent_catergory);
+// $master_category_id = $parent_category->parent;
+// $master_category = get_term($master_category_id, 'category');
 
 ?>
 
@@ -16,7 +17,7 @@ $master_category = get_term($master_category_id, 'category');
     <nav class="mt-5" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?php echo get_permalink(20); ?>">Termékek</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><a href="<?php echo esc_url( get_category_link( $master_category->term_id )) ?>"><?php echo $master_category->name ?></a></li>
+            
             <li class="breadcrumb-item"><?php echo $parent_category->name ?></li>
             <li class="breadcrumb-item active" aria-current="page"><a href="<?php echo esc_url( get_category_link( $start_category[0]->term_id )) ?>"><?php echo $start_category[0]->name ?></a></li>
         </ol>
