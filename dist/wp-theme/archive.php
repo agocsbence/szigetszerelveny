@@ -1,10 +1,12 @@
 <?php get_header();
 
-$id = get_the_ID();
+$category = get_category( get_query_var( 'cat' ) );
+$cat_id = $category->cat_ID;
+// $id = get_the_ID();
 
-echo $id;
+echo $cat_id;
 
-$args = array('parent' => $id, 'hide_empty' => false);
+$args = array('parent' => $cat_id, 'hide_empty' => false);
 $categories = get_categories( $args );
 foreach($categories as $category) { 
     echo '<p>Category: <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p> ';
