@@ -12,7 +12,9 @@ get_header();
 <section class="section products container">
 
     <?php
-        wp_list_categories();
+        wp_list_categories( array(
+            'depth' => 1
+        ));
     ?>
 
     <h1 class="mt-5">Termékek</h1>
