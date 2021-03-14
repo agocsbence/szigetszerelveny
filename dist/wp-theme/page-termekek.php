@@ -12,9 +12,22 @@ get_header();
 <section class="section products container">
 
     <?php
-        wp_list_categories( array(
-            'depth' => 1
-        ));
+        // wp_list_categories( array(
+        //     'depth' => 1
+        // ));
+
+        $categories = get_terms( 
+            'category', 
+            array('parent' => 0)
+         );
+        
+        echo '<ul>';
+
+        for( $i=0; $i<4; $i++ ) {
+            echo "<li>" . $categories[$i]->{'name'} . "</li>";
+        }
+
+        echo '</ul>';
     ?>
 
     <h1 class="mt-5">Termékek</h1>
