@@ -31,13 +31,15 @@
 						</div>
 					</a>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item"><a href="single.html">Acélcső,idomok</a></li>
-						<li class="list-group-item">KPE cső, idomok</li>
-						<li class="list-group-item">Lefolyócső, idomok</li>
-						<li class="list-group-item">Ötrétegű cső, fitting</li>
-						<li class="list-group-item">Rézcső, idomok</li>
-						<li class="list-group-item">Szénacél cső, idomok</li>
-						<li class="list-group-item">Szigetelés, védőcső</li>
+						<?php
+							$parent_category = $category;
+							$parent_cat_id = $parent_category->term_id;
+							$sub_args = array('parent' => $parent_cat_id, 'hide_empty' => false);
+							$sub_categories = get_categories( $sub_args );
+							foreach($sub_categories as $sub_category) { ?>
+								<li class="list-group-item"><a href="<?php get_category_link( $sub_category->term_id ) ?>"><?php echo $sub_category->name ?></a></li>
+							<?php }
+						?>
 					</ul>
 				</div>
 			</div>
