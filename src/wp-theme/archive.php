@@ -17,12 +17,15 @@
 		$args = array('parent' => $cat_id, 'hide_empty' => false);
 		$categories = get_categories( $args );
 		foreach($categories as $category) { 
-			$image = get_field('kep', $category->taxonomy . '_' . $category->term_id );?>
+			$image = get_field('kep', $category->taxonomy . '_' . $category->term_id );
+			if($image == '') {
+				$image = 'https://placehold.it/640x360';
+			} ?>
 
 			<div class="col-sm-12 col-lg-3 g-3">
 				<div class="card">
 					<a href="">
-						<img src="<?php if ($image): echo $image; else: echo 'https://placehold.it/640x360'; ?>" class="card-img-top" alt="<?php echo $category->name ?>">
+						<img src="<?php echo $image ?>" class="card-img-top" alt="<?php echo $category->name ?>">
 						<div class="card-body">
 							<h5 class="card-title"><?php echo $category->name ?></h5>
 						</div>
