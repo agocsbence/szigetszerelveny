@@ -16,8 +16,8 @@ get_header();
         
         <div class="col-12 col-lg-4">
             <h3>Szigetszentmiklós</h3>
-            <img src="https://placehold.it/640x360" alt="" class="mb-3">
-            <p><i class="bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
+            <img src="https://placehold.it/640x360" alt="">
+            <p class="mt-3"><i class="bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
             <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
             <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
             <p><i class="bi bi-envelope"></i> info@szigetszerelveny.hu</p>
