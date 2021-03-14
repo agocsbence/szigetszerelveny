@@ -7,7 +7,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css?v=1.0.0" type="text/css" />
 
 	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 	<link href="webclip.png" rel="apple-touch-icon" />
