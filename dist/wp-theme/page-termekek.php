@@ -16,6 +16,8 @@ get_header();
             'category', 
             array('parent' => 0)
         );
+
+        var_dump($categories);
     ?>
 
     <h1 class="mt-5">Termékek</h1>
