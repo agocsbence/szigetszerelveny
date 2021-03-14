@@ -2,34 +2,28 @@
 
 $id = get_the_ID();
 
-var_dump($id);
-
-$parent_term_id = $id; // term id of parent term (edited missing semi colon)
-
-$taxonomies = array( 
-    'category',
+$categories = get_terms( 
+	'category', array(
+		'parent' => $id,
+		'hide_empty' => false,
+	)
 );
-
-$args = array(
-    // 'parent'         => $parent_term_id,
-    'child_of'      => $parent_term_id, 
-); 
-
-$subcats = get_terms($taxonomies, $args);
+$count = count($categories);
 
 for( $i=0; $i<$count; $i++ ) { 
-	$category_link = get_category_link( $subcats[$i]->{'term_id'} );
-	$image = get_field('kep', $subcats[$i]->taxonomy . '_' . $subcats[$i]->term_id ); ?>
-		<div class="col-sm-12 col-lg-4">
-			<a href="<?php echo esc_url( $category_link ); ?>" class="card">
-				<img src="<?php echo $image?>" class="card-img-top" alt="<?php echo $subcats[$i]->{'name'} ?>">
-				<div class="card-body">
-					<h5 class="card-title"><?php echo $subcats[$i]->{'name'} ?></h5>
-				</div>
-			</a>
-		</div>
+
+	$category_link = get_category_link( $categories[$i]->{'term_id'} );
+	$image = get_field('kep', $categories[$i]->taxonomy . '_' . $categories[$i]->term_id ); ?>
+
+	<div class="col-sm-12 col-lg-4">
+		<a href="<?php echo esc_url( $category_link ); ?>" class="card">
+			<img src="<?php echo $image?>" class="card-img-top" alt="<?php echo $categories[$i]->{'name'} ?>">
+			<div class="card-body">
+				<h5 class="card-title"><?php echo $categories[$i]->{'name'} ?></h5>
+			</div>
+		</a>
+	</div>
 <?php } ?>
-?>
 
 
 <section class="section products container">
