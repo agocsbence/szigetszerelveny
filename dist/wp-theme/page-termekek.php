@@ -17,8 +17,11 @@ get_header();
         // ));
 
         $categories = get_terms( 
-            'category', 
-            array('parent' => 0)
+            'category', array(
+                'parent' => 0,
+                'hide_empty' => false,
+                'exclude' => 4
+            )
          );
         
         echo '<ul>';
