@@ -36,7 +36,7 @@ function change_post_menu_label() {
     global $submenu;
     $menu[5][0] = 'Termékek';
     $submenu['edit.php'][5][0] = 'Termékek';
-    $submenu['edit.php'][10][0] = 'Add Termék';
+    $submenu['edit.php'][10][0] = 'Termék hozzáadása';
     $submenu['edit.php'][16][0] = 'Tags';
     echo '';
 }
