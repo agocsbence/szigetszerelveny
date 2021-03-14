@@ -10,7 +10,14 @@ $parent_category = get_the_category($parent_category_id);
 $master_category_id = $parent_category[0]->parent;
 $master_category = get_the_category($master_category_id);
 
+echo '<h1>id:</h1>';
 var_dump($id);
+echo '<h1>start cat:</h1>';
+var_dump($start_category);
+echo '<h1>parent cat id:</h1>';
+var_dump($parent_category_id);
+echo '<h1>parent cat:</h1>';
+var_dump($parent_category);
 ?>
 
 <section class="section single container">
