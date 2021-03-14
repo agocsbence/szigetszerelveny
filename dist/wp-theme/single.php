@@ -29,7 +29,7 @@ $master_category = get_category($parent_category->parent);
     <div class="row mt-4">
         <h3>Kapcsolódó termékek</h3>
         <?php
-            $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category ) );
+            $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id ) );
             
             while ( $loop->have_posts() ) : $loop->the_post(); 
             
