@@ -50,7 +50,7 @@
 					</ul>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés">
-						<button class="btn btn-outline-secondary" type="submit">Keresés</button>
+						<button class="btn btn-outline-light" type="submit">Keresés</button>
 						<?php // get_search_form(); ?>
 					</form>
 				</div>
