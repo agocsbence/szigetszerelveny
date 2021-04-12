@@ -34,23 +34,8 @@
 						<li class="nav-item">
 							<a class="nav-link" href="<?php echo get_permalink(24); ?>">Rólunk</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">
-								Partnereink
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Viessmann</a></li>
-								<li><a class="dropdown-item" href="#">Ariston</a></li>
-								<li><a class="dropdown-item" href="#">Saunier Duval</a></li>
-								<li><a class="dropdown-item" href="#">Vaillant</a></li>
-								<li><a class="dropdown-item" href="#">Riello</a></li>
-								<li><a class="dropdown-item" href="#">Biasi</a></li>
-								<li>
-									<hr class="dropdown-divider">
-								</li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
+						<li class="nav-item">
+							<a class="nav-link" href="<?php echo get_category_link(4); ?>">Márkák</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="<?php echo get_permalink(26); ?>">Kapcsolat</a>
