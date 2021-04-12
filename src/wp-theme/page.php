@@ -1,6 +1,6 @@
 <?php get_header(); the_post(); ?>
 
-<section class="section container">
+<section class="section nolinkdecor container">
     <h1 class="mt-5"><?php the_title() ?></h1>
     <div class="row bg-white p-3 mt-4">
         

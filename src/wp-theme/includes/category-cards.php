@@ -1,4 +1,4 @@
-<section class="section products container">
+<section class="section products nolinkdecor container">
 	<nav class="mt-5" aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="<?php echo get_permalink(20); ?>">Termékek</a></li>

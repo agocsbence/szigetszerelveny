@@ -7,6 +7,7 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/all.min.css" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css?v=1.0.0" type="text/css" />
 
 	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -19,6 +20,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+					Sziget Szerelvény
 					<img src="<?php bloginfo('template_url') ?>/assets/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-top">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,6 +49,7 @@
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés">
 						<button class="btn btn-outline-success" type="submit">Keresés</button>
+						<?php get_search_form(); ?>
 					</form>
 				</div>
 			</div>
