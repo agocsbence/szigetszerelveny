@@ -19,7 +19,7 @@
 
 <body class="body bg-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
 					Sziget Szerelvény Kft.
@@ -50,7 +50,7 @@
 					</ul>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés">
-						<button class="btn btn-outline-success" type="submit">Keresés</button>
+						<button class="btn btn-outline-secondary" type="submit">Keresés</button>
 						<?php // get_search_form(); ?>
 					</form>
 				</div>
