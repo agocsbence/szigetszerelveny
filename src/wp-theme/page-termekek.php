@@ -9,7 +9,7 @@ get_header();
 
 ?>
 
-<section class="section products container">
+<section class="section nolinkdecor products container">
 
     <h1 class="mt-5">Termékek</h1>
     <div class="row mt-4">
