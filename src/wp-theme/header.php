@@ -20,8 +20,8 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-					Sziget Szerelvény
-					<img src="<?php bloginfo('template_url') ?>/assets/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-top">
+					Sziget Szerelvény Kft.
+					<!-- <img src="<?php bloginfo('template_url') ?>/assets/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-top"> -->
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -49,7 +49,7 @@
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés">
 						<button class="btn btn-outline-success" type="submit">Keresés</button>
-						<?php get_search_form(); ?>
+						<?php // get_search_form(); ?>
 					</form>
 				</div>
 			</div>
