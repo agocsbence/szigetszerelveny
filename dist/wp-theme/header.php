@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/all.min.css" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css?v=1.0.0" type="text/css" />
 
-	<script defer src="<?php bloginfo('template_url') ?>/assets/css/scripts.js"></script>
+	<script defer src="<?php bloginfo('template_url') ?>/assets/js/scripts.js"></script>
 
 	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 	<link href="webclip.png" rel="apple-touch-icon" />
