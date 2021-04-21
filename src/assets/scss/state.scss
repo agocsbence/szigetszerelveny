@@ -76,6 +76,12 @@ img {
     }
 }
 
+body.category-markak {
+    .card-body {
+        display: none;
+    }
+}
+
 .about-icons {
     margin-top: 2rem;
 }
