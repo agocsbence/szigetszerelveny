@@ -93,13 +93,11 @@ get_header();
 
 <h1 class="mt-5">Legnépszerűbb termékeink</h1>
     <div class="row mt-4">
-        <h1>hello</h1>
+
 	<?php 
 		$popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
-		var_dump($popularpost);
 		while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
 
-		<h1>hello</h1>
 		<div class="col-sm-12 col-lg-4">
 			<div class="card">
 				<a href="<?php echo get_permalink(); ?>">
