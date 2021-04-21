@@ -17,7 +17,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body class="body bg-light">
+<body <?php body_class(); ?>>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div class="container-fluid">

@@ -93,3 +93,8 @@ function wpb_track_post_views ($post_id) {
     wpb_set_post_views($post_id);
 }
 add_action( 'wp_head', 'wpb_track_post_views');
+
+//ADD BODY CLASSES
+add_filter( 'body_class', function( $classes ) {
+    return array_merge( $classes, array( 'bg-light', 'customize-support', 'body' ) );
+} );
