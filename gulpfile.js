@@ -17,7 +17,7 @@ gulp.task('styles', function () {
   return gulp.src('src/assets/scss/state.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
-    .pipe(gulp.dest('dist/assets/css/'));
+    .pipe(gulp.dest('dist/wp-theme/assets/css/'));
 });
 
 gulp.task('imagemin', async function () {
