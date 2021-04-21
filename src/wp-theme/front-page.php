@@ -109,9 +109,10 @@ get_header();
 			</div>
 		</div>
 
-    </div>
 	
 	<?php endwhile; ?>
+
+	</div>
 </section>
 
 <?php get_footer(); ?>
