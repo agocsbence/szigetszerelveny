@@ -35,8 +35,9 @@ $master_category = get_term($master_category_id, 'category');
         <?php
             $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id ) );
             
-            while ( $loop->have_posts() ) : $loop->the_post(); 
-            
+            while ( $loop->have_posts() ) : $loop->the_post();
+                
+                wpb_set_post_views(get_the_ID());
                 include get_theme_file_path( '/includes/card.php' );
             
             endwhile; wp_reset_query();
