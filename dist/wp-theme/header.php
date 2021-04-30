@@ -19,7 +19,7 @@
 
 <body <?php body_class(); ?>>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
 					Sziget Szerelvény Kft.
