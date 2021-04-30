@@ -27,7 +27,21 @@ $master_category = get_term($master_category_id, 'category');
         </div>
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
-            <button type="button" class="btn btn-outline-primary">Műszaki adatok</button>
+            <button type="button" class="btn btn-outline-primary"><i class="fas fa-download"></i> Műszaki adatok</button>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Műszaki adatok
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <?php the_field('muszaki_adatok') ?>
+                    </div>
+                    </div>
+                </div>    
+            </div>
             <p><?php the_content(); ?></p>
         </div>
     </div>
