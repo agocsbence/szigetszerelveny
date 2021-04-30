@@ -27,17 +27,19 @@ $master_category = get_term($master_category_id, 'category');
         </div>
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
+            <button type="button" class="btn btn-outline-primary">Műszaki adatok</button>
             <p><?php the_content(); ?></p>
         </div>
     </div>
     <div class="row mt-4">
         <h3>Kapcsolódó termékek</h3>
         <?php
-            $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id ) );
+            $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id, 'posts_per_page' => 6 ) );
             
             while ( $loop->have_posts() ) : $loop->the_post();
                 
                 wpb_set_post_views(get_the_ID());
+                var_dump($start_category->term_id);
                 include get_theme_file_path( '/includes/card.php' );
             
             endwhile; wp_reset_query();
