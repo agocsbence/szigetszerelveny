@@ -28,6 +28,7 @@ $master_category = get_term($master_category_id, 'category');
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
             <button type="button" class="btn btn-outline-primary"><i class="fas fa-download"></i> Műszaki adatok</button>
+            <br>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
