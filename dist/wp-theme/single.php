@@ -35,11 +35,11 @@ $master_category = get_term($master_category_id, 'category');
         <h3>Kapcsolódó termékek</h3>
         <?php
             $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id, 'posts_per_page' => 6 ) );
+            var_dump($start_category->slug);
             
             while ( $loop->have_posts() ) : $loop->the_post();
                 
                 wpb_set_post_views(get_the_ID());
-                var_dump($start_category);
                 include get_theme_file_path( '/includes/card.php' );
             
             endwhile; wp_reset_query();
