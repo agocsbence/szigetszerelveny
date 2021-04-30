@@ -35,7 +35,7 @@ $master_category = get_term($master_category_id, 'category');
         <h3>Kapcsolódó termékek</h3>
         <?php
             $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id, 'posts_per_page' => 6 ) );
-            var_dump($start_category->slug);
+            var_dump($start_category[0]->slug);
             
             while ( $loop->have_posts() ) : $loop->the_post();
                 
