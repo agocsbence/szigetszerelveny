@@ -39,7 +39,7 @@ $master_category = get_term($master_category_id, 'category');
             while ( $loop->have_posts() ) : $loop->the_post();
                 
                 wpb_set_post_views(get_the_ID());
-                var_dump($start_category->term_id);
+                var_dump($start_category);
                 include get_theme_file_path( '/includes/card.php' );
             
             endwhile; wp_reset_query();
