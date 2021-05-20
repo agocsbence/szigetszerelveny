@@ -6,7 +6,7 @@ get_header(); ?>
 
 <section class="section nolinkdecor products search container">
 
-    <div class="row mt-4">
+    <div class="mt-4">
 
         <?php if ( have_posts() ) : ?>
 
@@ -17,7 +17,7 @@ get_header(); ?>
                 <?php get_search_form(); ?>
             </div>
 
-            <div class="mt-4">
+            <div class="row mt-4">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
