@@ -23,12 +23,13 @@ $master_category = get_term($master_category_id, 'category');
       </nav>
     <div class="row mt-4">
         <div class="col-12 col-lg-4">
-            <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+            <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
+                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+            </figure>
         </div>
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
-            <button type="button" class="btn btn-outline-primary"><i class="fas fa-download"></i> Műszaki adatok</button>
-            <br>
+            <p><?php the_content(); ?></p>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -43,7 +44,6 @@ $master_category = get_term($master_category_id, 'category');
                     </div>
                 </div>    
             </div>
-            <p><?php the_content(); ?></p>
         </div>
     </div>
     <div class="row mt-4">
