@@ -24,8 +24,8 @@ get_header();
 
                 <div class="col-12 col-lg-4">
                     <h3>Szigetszentmiklós</h3>
-                    <img src="https://placehold.it/640x360" alt="">
-                    <p class="mt-3"><i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/dir//Szigetszentmikl%C3%B3s,+Gy%C3%A1ri+%C3%BAt+17,+2310/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4741ef60ee3149cb:0x386d55181f926236?sa=X&ved=2ahUKEwjCjt_HhtjwAhULLBoKHYEKCF0QwwUwAHoECAcQAw" target="blank"></a><?php the_sub_field('cim') ?></p>
+                    <img src="<?php the_sub_field('fenykep'); ?>" alt="Sziget Szerelvény - Szigetszentmiklós">
+                    <p class="mt-3"><i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/dir//Szigetszentmikl%C3%B3s,+Gy%C3%A1ri+%C3%BAt+17,+2310/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4741ef60ee3149cb:0x386d55181f926236?sa=X&ved=2ahUKEwjCjt_HhtjwAhULLBoKHYEKCF0QwwUwAHoECAcQAw" target="blank"><?php the_sub_field('cim') ?></a></p>
                     <p><i class="bi bi-telephone"></i> <a href="tel:<?php the_sub_field('telefon_1') ?>"><?php the_sub_field('telefon_1') ?></a></p>
                     <p><i class="bi bi-telephone"></i> <a href="tel:<?php the_sub_field('telefon_2') ?>"><?php the_sub_field('telefon_2') ?></a></p>
                     <p><i class="bi bi-envelope"></i> <a href="mailto:<?php the_sub_field('email') ?>"><?php the_sub_field('email') ?></a></p>
@@ -96,7 +96,7 @@ get_header();
                 <div class="col-12 col-lg-4">
                     <h3>Taksony</h3>
                     <img src="<?php the_sub_field('fenykep'); ?>" alt="Sziget Szerelvény - Taksony">
-                    <p class="mt-3"><i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/dir//Szigetszentmikl%C3%B3s,+Gy%C3%A1ri+%C3%BAt+17,+2310/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4741ef60ee3149cb:0x386d55181f926236?sa=X&ved=2ahUKEwjCjt_HhtjwAhULLBoKHYEKCF0QwwUwAHoECAcQAw" target="blank"></a><?php the_sub_field('cim') ?></p>
+                    <p class="mt-3"><i class="bi bi-geo-alt"></i> <a href="https://www.google.com/maps/dir/47.3515504,19.0232066/Taksony,+F%C5%91+%C3%BAt+47,+2335/@47.3378507,18.996129,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4741ef3d8f60bc39:0xa2a9f17fa41164b0!2m2!1d19.0658092!2d47.334494" target="blank"><?php the_sub_field('cim') ?></a></p>
                     <p><i class="bi bi-telephone"></i> <a href="tel:<?php the_sub_field('telefon_1') ?>"><?php the_sub_field('telefon_1') ?></a></p>
                     <p><i class="bi bi-envelope"></i> <a href="mailto:<?php the_sub_field('email') ?>"><?php the_sub_field('email') ?></a></p>
                 </div>
