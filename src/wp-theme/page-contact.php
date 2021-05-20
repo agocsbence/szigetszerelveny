@@ -70,7 +70,7 @@ get_header();
         <div class="col-12 col-lg-4">
             <h3>Térkép</h3>
             <?php 
-            $location = get_sub_field('terkep');
+            $location = get_field('terkep');
             if( $location ): ?>
                 <div class="acf-map" data-zoom="16">
                     <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
