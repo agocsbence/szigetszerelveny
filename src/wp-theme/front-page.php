@@ -118,7 +118,7 @@ get_header();
 		$popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
 		while ( $popularpost->have_posts() ) : $popularpost->the_post(); ?>
 
-		<div class="col-sm-12 col-lg-4">
+		<div class="col-sm-12 col-lg-3">
 			<div class="card">
 				<a href="<?php echo get_permalink(); ?>">
 					<img src="<?php echo the_post_thumbnail_url(); ?>" class="card-img-top" alt="<?php the_title(); ?>">
