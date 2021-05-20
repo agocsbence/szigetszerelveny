@@ -14,70 +14,74 @@ get_header();
     <h1 class="mt-5"><?php the_title() ?></h1>
     <div class="row bg-white p-3 mt-4">
         
-        <?php
-        $szszmiklos = get_field('szigetszentmiklos');
-        if( $szszmiklos ): ?>
+        <?php if( have_rows('szigetszentmiklos') ): ?>
+            <?php while( have_rows('szigetszentmiklos') ): the_row(); 
 
-        <div class="col-12 col-lg-4">
-            <h3>Szigetszentmiklós</h3>
-            <img src="https://placehold.it/640x360" alt="">
-            <p class="mt-3"><i class="bi bi-geo-alt"></i> <?php echo $szszmiklos['cim']; ?></p>
-            <p><i class="bi bi-telephone"></i> <a href="tel:<?php echo $szszmiklos['telefon_1']; ?>"><?php echo $szszmiklos['telefon_1']; ?></a></p>
-            <p><i class="bi bi-telephone"></i> <a href="tel:<?php echo $szszmiklos['telefon_2']; ?>"><?php echo $szszmiklos['telefon_2']; ?></a></p>
-            <p><i class="bi bi-envelope"></i> <a href="mailto:<?php echo $szszmiklos['email']; ?>"><?php echo $szszmiklos['email']; ?></a></p>
-        </div>
-        <div class="col-12 col-lg-4">
-        <table class="table table-hover">
-            <h3>Nyitvatartás</h3>
-            <tbody>
-                <tr>
-                    <th scope="row">Hétfő</th>
-                    <td>7:00</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Kedd</th>
-                    <td>7:00</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Szerda</th>
-                    <td>7:00</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Csütörtök</th>
-                    <td>7:00</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Péntek</th>
-                    <td>7:00</td>
-                    <td>17:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Szombat</th>
-                    <td>7:00</td>
-                    <td>12:00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Vasárnapő</th>
-                    <td colspan="2">ZÁRVA</td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-        <div class="col-12 col-lg-4">
-            <h3>Térkép</h3>
-            <?php 
-            $location = get_field('terkep');
-            var_dump($location);
-            if( $location ): ?>
-                <div class="acf-map" data-zoom="16">
-                    <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
+                // Get sub field values.
+                $terkep = get_sub_field('terkep');
+
+                ?>
+
+                <div class="col-12 col-lg-4">
+                    <h3>Szigetszentmiklós</h3>
+                    <img src="https://placehold.it/640x360" alt="">
+                    <p class="mt-3"><i class="bi bi-geo-alt"></i> <?php the_sub_field('cim') ?></p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:<?php the_sub_field('telefon_1') ?>"><?php the_sub_field('telefon_1') ?></a></p>
+                    <p><i class="bi bi-telephone"></i> <a href="tel:<?php the_sub_field('telefon_2') ?>"><?php the_sub_field('telefon_2') ?></a></p>
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:<?php the_sub_field('email') ?>"><?php the_sub_field('email') ?></a></p>
                 </div>
-            <?php endif; ?>
-        </div>
+                <div class="col-12 col-lg-4">
+                <table class="table table-hover">
+                    <h3>Nyitvatartás</h3>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Hétfő</th>
+                            <td>7:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Kedd</th>
+                            <td>7:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Szerda</th>
+                            <td>7:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Csütörtök</th>
+                            <td>7:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Péntek</th>
+                            <td>7:00</td>
+                            <td>17:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Szombat</th>
+                            <td>7:00</td>
+                            <td>12:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Vasárnapő</th>
+                            <td colspan="2">ZÁRVA</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <h3>Térkép</h3>
+                    <?php 
+                    var_dump($terkep);
+                    if( $terkep ): ?>
+                        <div class="acf-map" data-zoom="16">
+                            <div class="marker" data-lat="<?php echo esc_attr($terkep['lat']); ?>" data-lng="<?php echo esc_attr($terkep['lng']); ?>"></div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endwhile; ?>
         <?php endif; ?>
     </div>
 
