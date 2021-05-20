@@ -71,6 +71,7 @@ get_header();
             <h3>Térkép</h3>
             <?php 
             $location = get_field('terkep');
+            var_dump($location);
             if( $location ): ?>
                 <div class="acf-map" data-zoom="16">
                     <div class="marker" data-lat="<?php echo esc_attr($location['lat']); ?>" data-lng="<?php echo esc_attr($location['lng']); ?>"></div>
