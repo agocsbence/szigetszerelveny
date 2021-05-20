@@ -51,6 +51,27 @@ get_header();
 					<?php }
 				} ?>
 		</div>
+		<div class="carousel-inner">
+
+			<div class="carousel-item active" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_1'); ?>');">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Kazánok és készülékek">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Kazánok és készülékek</h1>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_2'); ?>');">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Kazánok és készülékek">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Szaniter-fürdőszoba</h1>
+				</div>
+			</div>
+			<div class="carousel-item" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_3'); ?>');">
+				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Kazánok és készülékek">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Víz-gáz-fűtés</h1>
+				</div>
+			</div>
+		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Előző</span>
