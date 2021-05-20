@@ -14,13 +14,17 @@ get_header();
     <h1 class="mt-5"><?php the_title() ?></h1>
     <div class="row bg-white p-3 mt-4">
         
+        <?php
+        $szszmiklos = get_field('szszmiklos');
+        if( $szszmiklos ): ?>
+        
         <div class="col-12 col-lg-4">
             <h3>Szigetszentmiklós</h3>
             <img src="https://placehold.it/640x360" alt="">
-            <p class="mt-3"><i class="bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
-            <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
-            <p><i class="bi bi-telephone"></i> +36 30 123 4567</p>
-            <p><i class="bi bi-envelope"></i> info@szigetszerelveny.hu</p>
+            <p class="mt-3"><i class="bi bi-geo-alt"></i> <?php echo $szszmiklos['cim']; ?></p>
+            <p><i class="bi bi-telephone"></i> <a href="tel:<?php echo $szszmiklos['telefon_1']; ?>"><?php echo $szszmiklos['telefon_1']; ?></a></p>
+            <p><i class="bi bi-telephone"></i> <a href="tel:<?php echo $szszmiklos['telefon_2']; ?>"><?php echo $szszmiklos['telefon_2']; ?></a></p>
+            <p><i class="bi bi-envelope"></i> <a href="mailto:<?php echo $szszmiklos['email']; ?>"><?php echo $szszmiklos['email']; ?></a></p>
         </div>
         <div class="col-12 col-lg-4">
         <table class="table table-hover">
@@ -67,7 +71,7 @@ get_header();
             <h3>Térkép</h3>
             google maps
         </div>
-
+        <?php endif; ?>
     </div>
 
     <div class="row bg-white p-3 mt-4">
