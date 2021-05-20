@@ -52,8 +52,6 @@ get_header();
 				} */ ?>
 		</div> -->
 		<div class="carousel-inner">
-			
-			<?php var_dump(get_field('slider_kep_1')); ?>
 			<div class="carousel-item active" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_1', 503); ?>');">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Kazánok és készülékek">
 				<div class="carousel-caption d-none d-md-block">

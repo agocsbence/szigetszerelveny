@@ -48,10 +48,12 @@
 							<a class="nav-link" href="#"><span class="badge bg-warning text-dark">Új üzletünk</span></a>
 						</li>
 					</ul>
-					<form class="d-flex">
-						<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés">
-						<button class="btn btn-outline-light" type="submit">Keresés</button>
-						<?php // get_search_form(); ?>
+					<form role="search" method="get" id="searchform" class="d-flex searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<div class="input-group ">
+							<!-- <label class="screen-reader-text" for="s"><?php _x( 'Search for:', 'label' ); ?></label> -->
+							<input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Keresés" value="<?php echo get_search_query(); ?>" name="s" id="s">
+							<button class="btn btn-outline-light" type="submit" id="searchsubmit" value="Keresés">Keresés</button>
+						</div>
 					</form>
 				</div>
 			</div>
