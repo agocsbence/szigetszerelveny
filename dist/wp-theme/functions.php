@@ -98,3 +98,10 @@ add_action( 'wp_head', 'wpb_track_post_views');
 add_filter( 'body_class', function( $classes ) {
     return array_merge( $classes, array( 'bg-light', 'body' ) );
 } );
+
+//ADD API KEY FOR GOOGLE MAPS
+function my_acf_google_map_api( $api ){
+	$api['key'] = 'AIzaSyAxY0Oe1gxAFqwa24I5gKBLuKW6vT8jGLI';
+	return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
