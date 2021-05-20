@@ -15,9 +15,9 @@ get_header();
     <div class="row bg-white p-3 mt-4">
         
         <?php
-        $szszmiklos = get_field('szszmiklos');
+        $szszmiklos = get_field('szigetszentmiklos');
         if( $szszmiklos ): ?>
-        
+
         <div class="col-12 col-lg-4">
             <h3>Szigetszentmiklós</h3>
             <img src="https://placehold.it/640x360" alt="">
