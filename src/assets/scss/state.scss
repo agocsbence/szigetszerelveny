@@ -24,6 +24,12 @@ img {
 }
 .carousel-inner {height: calc(80vh - 76px);}
 
+.carousel-logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
 .section.products,
 .section.single {
     .card {
