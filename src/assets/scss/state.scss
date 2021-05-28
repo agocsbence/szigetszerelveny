@@ -143,3 +143,12 @@ figure.zoom {
 .acf-map img {
    max-width: inherit !important;
 }
+
+.page-template-page-rolunk {
+    a {
+        color: $blue !important;
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
