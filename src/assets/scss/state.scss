@@ -32,6 +32,10 @@ img {
     background: #fff;
     padding: 1rem;
     border-radius: 50%;
+    @media screen and (max-width: 991px) {
+        width: 29vw;
+        padding: .4rem;
+    }
 }
 
 .section.products,
