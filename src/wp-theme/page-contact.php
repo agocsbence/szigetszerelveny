@@ -154,16 +154,16 @@ get_header();
 
     </div>
 
-    <div class="row bg-white p-3 mt-4">
-        <div class="col-12 col-lg-4">
+    <div class="row mt-4">
+        <div class="bg-white p-3 col-12 col-lg-4">
             <h3>Általános</h3>
             <a href="mailto:info@szigetszerelveny.hu">info@szigetszerelveny.hu</a>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="bg-white p-3 col-12 col-lg-4">
             <h3>Bolt</h3>
             <a href="mailto:bolt@szigetszerelveny.hu">bolt@szigetszerelveny.hu</a>
         </div>
-        <div class="col-12 col-lg-4">
+        <div class="bg-white p-3 col-12 col-lg-4">
             <h3>Iroda</h3>
             <a href="mailto:iroda@szigetszerelveny.hu">iroda@szigetszerelveny.hu</a>
         </div>
