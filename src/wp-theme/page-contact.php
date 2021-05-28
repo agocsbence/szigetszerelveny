@@ -158,19 +158,19 @@ get_header();
         <div class="col-12 col-lg-4">
             <div class="bg-white p-3">
                 <h3>Általános</h3>
-                <a href="mailto:info@szigetszerelveny.hu">info@szigetszerelveny.hu</a>
+                <i class="bi bi-envelope"></i> <a href="mailto:info@szigetszerelveny.hu">info@szigetszerelveny.hu</a>
             </div>
         </div>
         <div class="col-12 col-lg-4">
             <div class="bg-white p-3">
                 <h3>Bolt</h3>
-                <a href="mailto:bolt@szigetszerelveny.hu">bolt@szigetszerelveny.hu</a>
+                <i class="bi bi-envelope"></i> <a href="mailto:bolt@szigetszerelveny.hu">bolt@szigetszerelveny.hu</a>
             </div>
         </div>
         <div class="col-12 col-lg-4">
             <div class="bg-white p-3">
                 <h3>Iroda</h3>
-                <a href="mailto:iroda@szigetszerelveny.hu">iroda@szigetszerelveny.hu</a>
+                <i class="bi bi-envelope"></i> <a href="mailto:iroda@szigetszerelveny.hu">iroda@szigetszerelveny.hu</a>
             </div>
         </div>
     </div>
