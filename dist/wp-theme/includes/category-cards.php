@@ -18,14 +18,14 @@
 			} ?>
 
 			<div class="col-sm-12 col-lg-3 g-3">
-				<div class="card">
+				<div class="card nolinkdecor">
 					<a href="">
 						<img src="<?php echo $image ?>" class="card-img-top" alt="<?php echo $category->name ?>">
 						<div class="card-body">
 							<h5 class="card-title"><?php echo $category->name ?></h5>
 						</div>
 					</a>
-					<ul class="list-group list-group-flush">
+					<ul class="list-group nolinkdecor list-group-flush">
 						<?php
 							$parent_category = $category;
 							$parent_cat_id = $parent_category->term_id;
