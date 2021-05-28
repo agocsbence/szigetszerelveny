@@ -17,7 +17,7 @@
     <div class="row mt-4">
 
         <?php
-            $loop = new WP_Query( array( 'post_type' => 'post', 'cat' => $start_category->term_id ) );
+            $loop = new WP_Query( array( 'post_type' => 'post', 'orderby' => 'title', 'order' => 'ASC', 'cat' => $start_category->term_id ) );
             
             while ( $loop->have_posts() ) : $loop->the_post(); 
             
