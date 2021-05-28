@@ -113,6 +113,13 @@ footer,
     }
 }
 
+footer {
+    a {
+        text-decoration: none;
+        color: inherit !important;
+    }
+}
+
 .card-title {
     height: 3rem;
 }
@@ -144,7 +151,8 @@ figure.zoom {
    max-width: inherit !important;
 }
 
-.page-template-page-rolunk {
+.page-template-page-rolunk,
+.page-template-page-contact {
     main a {
         color: $blue !important;
         &:hover {
