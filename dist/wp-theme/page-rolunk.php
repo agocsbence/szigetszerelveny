@@ -16,11 +16,14 @@ get_header();
         <?php the_content() ?>
         
         <div class="about-icons row">
-            <div class="col"><p><i class="far fa-comment"></i> Tanácsadás</p></div>
-            <div class="col"><p><i class="fas fa-fingerprint"></i> Egyedi ajánlatok</p></div>
-            <div class="col"><p><i class="fas fa-medal"></i> Innovatív megoldások</p></div>
-            <div class="col"><p><i class="fas fa-user-check"></i> Megbízható gyártók termékei</p></div>
-            <div class="col"><p><i class="fas fa-shipping-fast"></i> Gyors teljesítés</p></div>
+            
+            <?php $szolgaltatasok = get_field('szolgaltatasok'); ?>
+            
+            <div class="col"><img src="<?php echo $szolgaltatasok['ikon_1']; ?>" alt="<?php echo $szolgaltatasok['szolgaltatas_1']; ?>"><p><?php echo $szolgaltatasok['szolgaltatas_1']; ?></p></div>
+            <div class="col"><img src="<?php echo $szolgaltatasok['ikon_2']; ?>" alt="<?php echo $szolgaltatasok['szolgaltatas_2']; ?>"><p><?php echo $szolgaltatasok['szolgaltatas_2']; ?></p></div>
+            <div class="col"><img src="<?php echo $szolgaltatasok['ikon_3']; ?>" alt="<?php echo $szolgaltatasok['szolgaltatas_3']; ?>"><p><?php echo $szolgaltatasok['szolgaltatas_3']; ?></p></div>
+            <div class="col"><img src="<?php echo $szolgaltatasok['ikon_4']; ?>" alt="<?php echo $szolgaltatasok['szolgaltatas_4']; ?>"><p><?php echo $szolgaltatasok['szolgaltatas_4']; ?></p></div>
+            <div class="col"><img src="<?php echo $szolgaltatasok['ikon_5']; ?>" alt="<?php echo $szolgaltatasok['szolgaltatas_5']; ?>"><p><?php echo $szolgaltatasok['szolgaltatas_5']; ?></p></div>
         </div>
 
     </div>
