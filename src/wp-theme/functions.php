@@ -105,3 +105,16 @@ function my_acf_google_map_api( $api ){
 	return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+//TINYMCE TABLE PLUGIN
+function add_the_table_button( $buttons ) {
+    array_push( $buttons, 'separator', 'table' );
+    return $buttons;
+}
+add_filter( 'mce_buttons', 'add_the_table_button' );
+
+function add_the_table_plugin( $plugins ) {
+      $plugins['table'] = content_url() . '/tinymce-plugins/table/plugin.min.js';
+      return $plugins;
+}
+add_filter( 'mce_external_plugins', 'add_the_table_plugin' );
