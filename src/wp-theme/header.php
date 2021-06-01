@@ -18,6 +18,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<?php $akcio = get_field('akcio');
+	if ($akcio):
+	
+	var_dump($akcio);
+	
+	endif; ?>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
