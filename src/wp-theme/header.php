@@ -19,14 +19,12 @@
 
 <body <?php body_class(); ?>>
 	<?php $akcio = get_field('akcio', 503);
-
-	var_dump($akcio);
 	
-	if ($akcio):
+	if ($akcio): ?>
 		
-		var_dump($akcio);
+		<div class="akcio" stlye="background-color: <?php $akcio['hatterszin'] ?>; padding: .6rem; text-align: center;"><?php $akcio['akcio_szovege'] ?></div>
 		
-	endif; ?>
+	<?php endif; ?>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
