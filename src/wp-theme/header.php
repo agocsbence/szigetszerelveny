@@ -18,9 +18,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php $akcio = get_field('akcio', 503);
+	<?php 
+	$akcio = get_field('akcio', 503);
+	$kapcsolo = $akcio['kapcsolo'];
 	
-	if ($akcio): ?>
+	if ($kapcsolo): ?>
 		
 		<div class="akcio" style="color: <?php echo $akcio['szovegszin']; ?>; background-color: <?php echo $akcio['hatterszin']; ?>; padding: .6rem; text-align: center;"><?php echo $akcio['akcio_szovege']; ?></div>
 		
