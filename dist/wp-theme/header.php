@@ -18,7 +18,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php $akcio = get_field('akcio');
+	<?php $akcio = get_field('akcio', 503);
 	if ($akcio):
 	
 	var_dump($akcio);
