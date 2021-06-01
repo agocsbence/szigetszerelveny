@@ -22,7 +22,7 @@
 	
 	if ($akcio): ?>
 		
-		<div class="akcio" stlye="background-color: <?php $akcio['hatterszin'] ?>; padding: .6rem; text-align: center;"><?php $akcio['akcio_szovege'] ?></div>
+		<div class="akcio" stlye="background-color: <?php echo $akcio['hatterszin']; ?>; padding: .6rem; text-align: center;"><?php echo $akcio['akcio_szovege']; ?></div>
 		
 	<?php endif; ?>
 	<header>
