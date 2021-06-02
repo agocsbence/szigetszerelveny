@@ -47,7 +47,7 @@ $master_category = get_term($master_category_id, 'category');
             </div>
 
             <?php if(get_field('letoltheto_anyag')) : ?>
-                <a class="btn btn-secondary mt-4" href="<?php the_field('letoltheto_anyag'); ?>" download role="button"><?php the_field('letoltheto_gomb_szoveg'); ?></a>
+                <a class="btn btn-secondary mt-4" href="<?php the_field('letoltheto_anyag'); ?>" download role="button"><i class="bi bi-file-pdf"></i> <?php the_field('letoltheto_gomb_szoveg'); ?></a>
             <?php endif; ?>
 
         </div>
