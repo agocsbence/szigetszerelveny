@@ -163,13 +163,13 @@ get_header();
         </div>
         <div class="col-12 col-lg-4">
             <div class="bg-white p-3">
-                <h3>Bolt</h3>
+                <h3>Ajánlatkérés</h3>
                 <i class="text-info bi bi-envelope"></i> <a href="mailto:bolt@szigetszerelveny.hu">bolt@szigetszerelveny.hu</a>
             </div>
         </div>
         <div class="col-12 col-lg-4">
             <div class="bg-white p-3">
-                <h3>Iroda</h3>
+                <h3>Pénzügy</h3>
                 <i class="text-info bi bi-envelope"></i> <a href="mailto:iroda@szigetszerelveny.hu">iroda@szigetszerelveny.hu</a>
             </div>
         </div>
