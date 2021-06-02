@@ -86,8 +86,17 @@ img {
         }
     }
     table {
+        tr {
+            transition: all .3s ease;
+            &:nth-child(even) {
+                background: #f1f1f1;
+            }
+            &:hover {
+                background: #ccc;
+            }
+        }
         td {
-            border-width: 1px;
+            // border-width: 1px;
             padding: 5px;
         }
     }
@@ -161,6 +170,6 @@ figure.zoom {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #333 !important;
-    background-color: #efefef !important;
+    color: #fff !important;
+    background-color: #333 !important;
 }
