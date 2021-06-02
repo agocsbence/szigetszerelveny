@@ -159,3 +159,8 @@ figure.zoom {
         }
     }
 }
+
+.accordion-button:not(.collapsed) {
+    color: #333 !important;
+    background-color: #efefef !important;
+}
