@@ -30,6 +30,7 @@ $master_category = get_term($master_category_id, 'category');
         <div class="col-12 col-lg-8">
             <h1><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
+
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -44,6 +45,11 @@ $master_category = get_term($master_category_id, 'category');
                     </div>
                 </div>    
             </div>
+
+            <?php if(get_field('letoltheto_anyag')) : ?>
+                <a class="btn btn-secondary" href="<?php the_field('letolheto_anyag') ?>" download role="button"><?php the_field('letolheto_gomb_szoveg'); ?></a>
+            <?php endif; ?>
+
         </div>
     </div>
     <div class="row mt-4">
