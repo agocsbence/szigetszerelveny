@@ -47,6 +47,7 @@ $master_category = get_term($master_category_id, 'category');
             </div>
 
             <?php if(get_field('letoltheto_anyag')) : ?>
+                <?php var_dump( get_field('letoltheto_anyag') ); ?>
                 <a class="btn btn-secondary mt-4" href="<?php echo the_field('letolheto_anyag'); ?>" download role="button"><?php echo the_field('letolheto_gomb_szoveg'); ?></a>
             <?php endif; ?>
 
