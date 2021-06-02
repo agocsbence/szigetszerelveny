@@ -6,14 +6,14 @@
                     <img src="<?php bloginfo('template_url') ?>/assets/img/logo-white.png" alt="Sziget Szerelvény Kft.">
                 </div>
                 <div class="col-sm-12 col-lg-4 gy-4 gy-sm-0">
-                    <p><i class="bi bi-telephone"></i> Szigetszentmiklós: <a href="tel:+36301234567">+36 30 123 4567</a></p>
-					<p><i class="bi bi-telephone"></i> Taksony: <a href="tel:+36301234567">+36 30 123 4567</a></p>
+                    <p><i class="text-success bi bi-telephone"></i> Szigetszentmiklós: <a href="tel:+36301234567">+36 30 123 4567</a></p>
+					<p><i class="text-success bi bi-telephone"></i> Taksony: <a href="tel:+36301234567">+36 30 123 4567</a></p>
 					<p><i class="bi bi-file-earmark-text"></i> Adatkezelési nyilatkozat</p>
                 </div>
                 <div class="col-sm-12 col-lg-4 gy-4 gy-sm-0">
-                    <p><i class="bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
-                    <p><i class="bi bi-geo-alt"></i> 2335 Taksony Fő út 47.</p>
-                    <p><i class="bi bi-envelope"></i> info@szigetszerelveny.hu</p>
+                    <p><i class="text-danger bi bi-geo-alt"></i> 2310 Szigetszentmiklós Gyári út 17.</p>
+                    <p><i class="text-danger bi bi-geo-alt"></i> 2335 Taksony Fő út 47.</p>
+                    <p><i class="text-info bi bi-envelope"></i> info@szigetszerelveny.hu</p>
                 </div>
             </div>
         </div>
