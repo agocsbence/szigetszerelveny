@@ -31,20 +31,22 @@ $master_category = get_term($master_category_id, 'category');
             <h1><?php the_title(); ?></h1>
             <p><?php the_content(); ?></p>
 
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <strong>Műszaki adatok</strong>
-                    </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <?php the_field('muszaki_adatok') ?>
-                    </div>
-                    </div>
-                </div>    
-            </div>
+            <?php if(get_field('muszaki_adatok')) : ?>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>Műszaki adatok</strong>
+                        </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <?php the_field('muszaki_adatok') ?>
+                        </div>
+                        </div>
+                    </div>    
+                </div>
+            <?php endif; ?>
 
             <?php if(get_field('letoltheto_anyag')) : ?>
                 <a class="btn btn-secondary mt-4" href="<?php the_field('letoltheto_anyag'); ?>" download role="button"><i class="bi bi-file-pdf"></i> <?php the_field('letoltheto_gomb_szoveg'); ?></a>
