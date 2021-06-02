@@ -2,9 +2,9 @@
 	<footer class="bg-dark text-white mt-5">
         <div class="container">
             <div class="row p-3">
-                <!-- <div class="col-sm-12 col-lg-4">
-                    <img src="<?php // bloginfo('template_url') ?>/assets/img/logo.png" alt="...">
-                </div> -->
+                <div class="col-sm-12 col-lg-4">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/logo.png" alt="Sziget Szerelvény Kft.">
+                </div>
                 <div class="col-sm-12 col-lg-6 gy-4 gy-sm-0">
                     <p><i class="bi bi-telephone"></i> Szigetszentmiklós: <a href="tel:+36301234567">+36 30 123 4567</a></p>
 					<p><i class="bi bi-telephone"></i> Taksony: <a href="tel:+36301234567">+36 30 123 4567</a></p>
