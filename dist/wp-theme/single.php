@@ -70,7 +70,6 @@ $master_category = get_term($master_category_id, 'category');
     </div>
 </section>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
     $('.accordion-collapse img').magnificPopup({
         type: 'image',
