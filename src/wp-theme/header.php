@@ -14,7 +14,7 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script defer src="<?php bloginfo('template_url') ?>/assets/js/jquery.magnific-popup.min.js"></script>
-	<script defer src="<?php bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.2"></script>
+	<!-- <script defer src="<?php // bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.2"></script> -->
 
 	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 	<link href="webclip.png" rel="apple-touch-icon" />
