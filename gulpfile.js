@@ -35,7 +35,7 @@ gulp.task('scripts', function(){
   return gulp.src('src/assets/js/**/*.js')
     .pipe(concat('scripts.js'))
     .pipe(minify())
-    .pipe(gulp.dest('dist/assets/js'))
+    .pipe(gulp.dest('dist/wp-theme/assets/js'))
 });
 
 gulp.task('copyCSS', function() {
