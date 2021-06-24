@@ -40,9 +40,19 @@ $master_category = get_term($master_category_id, 'category');
                         </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <?php the_field('muszaki_adatok') ?>
-                        </div>
+                            <div class="accordion-body">
+                                <?php the_field('muszaki_adatok') ?>
+                            </div>
+                            <script>
+                                $('.accordion-collapse img').magnificPopup({
+                                    type: 'image',
+                                    closeOnContentClick: true,
+                                    mainClass: 'mfp-img-mobile',
+                                    image: {
+                                        verticalFit: true
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>    
                 </div>
