@@ -24,7 +24,7 @@ $master_category = get_term($master_category_id, 'category');
     <div class="row mt-4">
         <div class="col-12 col-lg-4">
             <figure class="zoom" onmousemove="zoom(event)" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
-                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+                <img src="<?php echo the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" style="background: #fff;" />
             </figure>
         </div>
         <div class="col-12 col-lg-8">
