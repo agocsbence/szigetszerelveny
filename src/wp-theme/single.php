@@ -43,16 +43,6 @@ $master_category = get_term($master_category_id, 'category');
                             <div class="accordion-body">
                                 <?php the_field('muszaki_adatok') ?>
                             </div>
-                            <script>
-                                $('.accordion-collapse img').magnificPopup({
-                                    type: 'image',
-                                    closeOnContentClick: true,
-                                    mainClass: 'mfp-img-mobile',
-                                    image: {
-                                        verticalFit: true
-                                    }
-                                });
-                            </script>
                         </div>
                     </div>    
                 </div>
@@ -79,6 +69,18 @@ $master_category = get_term($master_category_id, 'category');
 
     </div>
 </section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $('.accordion-collapse img').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-img-mobile',
+        image: {
+            verticalFit: true
+        }
+    });
+</script>
 
 <?php
 include get_theme_file_path( '/includes/alert.php' );
