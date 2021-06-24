@@ -71,13 +71,15 @@ $master_category = get_term($master_category_id, 'category');
 </section>
 
 <script>
-    $('.accordion-collapse img').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-img-mobile',
-        image: {
-            verticalFit: true
-        }
+    $(document).ready(function() {
+        $('.accordion-collapse img').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+        });
     });
 </script>
 
