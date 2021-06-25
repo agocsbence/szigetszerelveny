@@ -70,7 +70,7 @@ $master_category = get_term($master_category_id, 'category');
     </div>
 </section>
 
-<script>
+<!-- <script>
     $(document).ready(function() {
         $('.accordion-collapse img').wrap("<a class='popup-image' href='" + $('.accordion-collapse img').attr('src') + "'></a>");
         $('.popup-image').magnificPopup({
@@ -82,7 +82,7 @@ $master_category = get_term($master_category_id, 'category');
             }
         });
     });
-</script>
+</script> -->
 
 <?php
 include get_theme_file_path( '/includes/alert.php' );
