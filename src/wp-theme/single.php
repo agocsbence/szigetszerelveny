@@ -41,17 +41,11 @@ $master_category = get_term($master_category_id, 'category');
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <!-- <?php // the_field('muszaki_adatok') ?> -->
-                                <?php
-                                if ( function_exists('slb_activate') ){
+                                <?php if ( function_exists('slb_activate') ){
                                     $technical_content = get_field('muszaki_adatok');
                                     $content = slb_activate($technical_content);
                                     echo $content;
-                                    echo "zero";
-                                } else {
-                                    echo "zero";
-                                }
-                                ?>
+                                } ?>
                             </div>
                         </div>
                     </div>    
