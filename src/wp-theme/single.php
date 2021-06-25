@@ -80,7 +80,7 @@ $master_category = get_term($master_category_id, 'category');
         //         verticalFit: true
         //     }
         // });
-        $('.accordion-collapse img').wrap("<a class='popup-image' href='" + this.attr('src') + "'></a>");
+        $('.accordion-collapse img').wrap("<a class='popup-image' href='" + $('.accordion-collapse img').attr('src') + "'></a>");
         $('.accordion-collapse img').magnificPopup({
             type: 'ajax',
             alignTop: true,
