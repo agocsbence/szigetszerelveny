@@ -47,6 +47,7 @@ $master_category = get_term($master_category_id, 'category');
                                     $technical_content = get_field('muszaki_adatok');
                                     $content = slb_activate($technical_content);
                                     echo $content;
+                                    echo "zero";
                                 } else {
                                     echo "zero";
                                 }
