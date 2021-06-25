@@ -72,13 +72,18 @@ $master_category = get_term($master_category_id, 'category');
 
 <script>
     $(document).ready(function() {
+        // $('.accordion-collapse img').magnificPopup({
+        //     type: 'image',
+        //     closeOnContentClick: true,
+        //     mainClass: 'mfp-img-mobile',
+        //     image: {
+        //         verticalFit: true
+        //     }
+        // });
         $('.accordion-collapse img').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            mainClass: 'mfp-img-mobile',
-            image: {
-                verticalFit: true
-            }
+            type: 'ajax',
+            alignTop: true,
+            overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
         });
     });
 </script>
