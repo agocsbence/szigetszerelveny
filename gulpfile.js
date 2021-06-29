@@ -35,12 +35,12 @@ gulp.task('scripts', function(){
   return gulp.src('src/assets/js/**/*.js')
     .pipe(concat('scripts.js'))
     .pipe(minify())
-    .pipe(gulp.dest('dist/wp-theme/assets/js'))
+    .pipe(gulp.dest('dist/assets/js'))
 });
 
 gulp.task('copyCSS', function() {
   return gulp.src('src/assets/css/*.css')
-    .pipe(gulp.dest('dist/assets/css/'));
+    .pipe(gulp.dest('dist/wp-theme/assets/css/'));
 });
 
 gulp.task('copyHTML', function() {
