@@ -10,7 +10,7 @@
 	
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/all.min.css" type="text/css" /><!-- font awesome -->
-	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css?v=1.0.5" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/state.css?v=1.0.6" type="text/css" />
 	
 	<!-- <script defer src="<?php // bloginfo('template_url') ?>/assets/js/scripts.js?v=1.0.2"></script> -->
 
