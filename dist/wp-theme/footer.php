@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row p-3">
                 <div class="col-sm-12 col-lg-4">
-                    <img src="<?php bloginfo('template_url') ?>/assets/img/logo-footer.png" alt="Sziget Szerelvény Kft." style="width: 130px;">
+                    <img src="<?php bloginfo('template_url') ?>/assets/img/logo-footer--white.png" alt="Sziget Szerelvény Kft." style="width: 130px;">
                 </div>
                 <div class="col-sm-12 col-lg-4 gy-4 gy-sm-0">
                     <p><i class="text-success bi bi-telephone"></i> Szigetszentmiklós: <a href="tel:+36301234567">+36 30 123 4567</a></p>
