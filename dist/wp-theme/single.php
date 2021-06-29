@@ -76,9 +76,6 @@ $master_category = get_term($master_category_id, 'category');
 
 <script>
     $(document).ready(function() {
-        $('.accordion-collapse img').wrap("<a class='popup-image' href='" + $('.accordion-collapse img').attr('src') + "'></a>");
-        
-        console.log('img wrapped');
 
         $('.accordion-collapse img').each(function(){
             var srcset=$(this).attr('srcset');
@@ -86,7 +83,8 @@ $master_category = get_term($master_category_id, 'category');
             for(var key in srcset_arr){
                 if(key==srcset_arr.length-1){
                 var orig_image=(srcset_arr[key]).split(' ')[0];
-                    console.log(orig_image);
+                    console.log( $(this) );
+                    $(this).wrap("<a class='popup-image' href='" +orig_image + "'></a>");
                 }
             }
         });
