@@ -77,6 +77,7 @@ $master_category = get_term($master_category_id, 'category');
 <script>
     $(document).ready(function() {
         $('.accordion-collapse img').wrap("<a class='popup-image' href='" + $('.accordion-collapse img').attr('src') + "'></a>");
+        console.log('img wrapped')
         // $('.popup-image').magnificPopup({
         //     type: 'image',
         //     closeOnContentClick: true,
