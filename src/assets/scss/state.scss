@@ -123,6 +123,18 @@ a.card,
     }
 }
 
+.section.products .card .list-group .list-group-item:first-child, .section.single .card .list-group .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.list-group-item {
+    background: #555;
+    a {
+        color: #fff !important;
+    }
+}
+
 footer {
     &.bg-dark {
         // background: rgb(67, 67, 67) !important;
