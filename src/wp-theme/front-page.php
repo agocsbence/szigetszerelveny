@@ -55,19 +55,19 @@ get_header();
 			<!-- <img src="<?php // bloginfo('template_url') ?>/assets/img/logo.png" alt="Sziget Szerelvény" class="carousel-logo"> -->
 			<a href="<?php echo get_home_url(); ?>/termekek/kazanok-es-keszulekek" class="carousel-item active" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_1', 503); ?>');">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Kazánok és készülékek">
-				<div class="carousel-caption d-none d-md-block">
+				<div class="carousel-caption d-md-block">
 					<h1>Kazánok és készülékek</h1>
 				</div>
 			</a>
 			<a href="<?php echo get_home_url(); ?>/termekek/szaniter-furdoszoba" class="carousel-item" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_2', 503); ?>');">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Szaniter-fürdőszoba">
-				<div class="carousel-caption d-none d-md-block">
+				<div class="carousel-caption d-md-block">
 					<h1>Szaniter-fürdőszoba</h1>
 				</div>
 			</a>
 			<a href="<?php echo get_home_url(); ?>/termekek/viz-gaz-futes" class="carousel-item" data-bs-interval="5000" style="background-image: url('<?php the_field('slider_kep_3', 503); ?>');">
 				<img src="<?php bloginfo('template_url') ?>/assets/img/fade.png" class="d-block w-100" alt="Víz-gáz-fűtés">
-				<div class="carousel-caption d-none d-md-block">
+				<div class="carousel-caption d-md-block">
 					<h1>Víz-gáz-fűtés</h1>
 				</div>
 			</a>

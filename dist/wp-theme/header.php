@@ -58,7 +58,7 @@
 							<a class="nav-link" href="<?php echo get_permalink(26); ?>">Kapcsolat</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#"><span class="badge bg-warning text-dark">Új üzletünk</span></a>
+							<a class="nav-link" href="//beta.haromstudio.com/vasmuszaki"><span class="badge bg-warning text-dark">Új üzletünk</span></a>
 						</li>
 					</ul>
 					<form role="search" method="get" id="searchform" class="d-flex searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
