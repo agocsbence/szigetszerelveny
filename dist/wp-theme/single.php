@@ -5,10 +5,20 @@ $id = get_the_ID();
 $start_category = get_the_category($id);
 
 $parent_category_id = $start_category[0]->parent;
+echo 'start category: ';
+var_dump($start_category);
+echo '</br>';
+
 $parent_category = get_term($parent_category_id, 'category');
+echo 'parent category: ';
+var_dump($parent_category);
+echo '</br>';
 
 $master_category_id = $parent_category->parent;
 $master_category = get_term($master_category_id, 'category');
+echo 'master category: ';
+var_dump($master_category);
+echo '</br>';
 
 ?>
 
