@@ -2,7 +2,7 @@
 
 $id = get_the_ID();
 
-$start_category = get_the_category_list($id);
+$start_category = get_the_category($id);
 
 $parent_category_id = $start_category[0]->parent;
 echo 'start category: ';
